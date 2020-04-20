@@ -2,20 +2,14 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://use.typekit.net/vmx6nnp.css">
-        <link rel="stylesheet" href="components/Front.css">
+        <link rel="stylesheet" href="Front.css">
         <link rel="stylesheet" href="components/Top_Nav.css">
         <link rel="stylesheet" href="components/Side_MenuBar.css">
-        <link rel="stylesheet" href="components/slider.css">
-        <link rel="stylesheet" href="components/Cards.css">
-        <link rel="stylesheet" href="components/EMICalc.css">
         <link rel="stylesheet" href="about.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="Side_MenuBar.js"></script>
-        <script src="EMICalc.js"></script>
+        <script src="components/Side_MenuBar.js"></script>
         <title>Welcome To LBI Loans</title>
     </head>
 <body>
@@ -25,11 +19,11 @@
     <nav>
       <div id="mainbox" onclick="openFunc()"><img src="https://img.icons8.com/material-rounded/30/000000/menu.png"/></div>
         <div class="logo">
-            <li><a href="Front.html">LBI Loans</a></li>
+            <li><a href="index.html"><img class="logo-img" src="LBI Logo.png"></a></li>
         </div>
         <ul class="nav-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
             <li><a href="#">Affiliates</a></li>
             <li><a href="login.html"><button>Login</button></a></li>
             <li><a href="register.html"><button>Register</button></a></li>
@@ -46,22 +40,23 @@
                     <li><a href="VehicleRegister.html">Vehicle Loan</a></li>
                 </ul>
             </li>
-            <li><a href="#">Schemes</a></li>
+            <li><a href="scheme.html">Schemes</a></li>
             <li><a href="EMICalc.html">EMI Calculator</a></li>
             <li><a href="#" class="closebtn" onclick="closeFunc()">&times;</a></li>
         </ul>
     </div>
+    <!-- About us -->
     <div class="about">
-        <img src ="payonline.png" align="right" style=width:48%> 
+        <img class="about-imag" src ="payonline.png" align="right"> 
         <h1 style="font-size:40px" style="font-style: normal;"> ABOUT US</h1>
         
         
-        <h1 ><p>We are one of the first online portals to provide Loans Online.
+        <p>We are one of the first online portals to provide Loans Online.
        Our Organization focuses on providing Loans at a Lower Interest Rate.
        We  ensure 24/7 availability inorder to facilitate the customers.
        Unlike  other traditional loans, personal loans through our portal are faster in terms of application and approval process.
      The application process takes 15 to 20 minutes whereas the approval process takes a few hours. 
-     You can get a cash loan on the same day of application.Once your personal loan is approved, the cash amount is directly transferred into your personal savings account.</p></h1>
+     You can get a cash loan on the same day of application.Once your personal loan is approved, the cash amount is directly transferred into your personal savings account.</p>
 
 
         
@@ -69,35 +64,25 @@
     <br>
     <div class ="row">
     <div class ="column">
-    <div class="container1"style="margin-left:90px">
+    <div class="container1">
     <div class="card">
-    <div class="front">
-        <img src="maleav.png" style="border-radius: 50%;">
-        <h3 style="text-align: center;">Harish</h3>
-        <h4 style="text-align: center;">Developer</h4>
-        <i  style="margin-top:12px;"class="fa">&#xf10b; 0091 90001234</i>
-        
-        <i style="margin-left: 78px;" class="fa">&#xf0e0; harish@gmail.com</i>
-
-       
-        
-
-        
+    <div class="front1">
+        <img class="avatar" src="maleav.png" >
+        <p class="expertise">Harish R K</p>
+        <p class="details">Full Stack Developer</p>
+        <p class="details">Desgination</p>
+        <p class="c-details">aaaa@gmail.com</p>
+        <p class="c-details">+91 11111 11111</p>
     </div>
-    
     <div class="back">
-        
-        
-        <img src="cardback1.png">
-        <a href="https://www.facebook.com/login" target="blank">
-            <i style="font-size:24px; color:blue; margin-top:30px;" class="fa">&#xf09a;</i></a>
-            <a href="https://twitter.com/login" target="blank">
-            <i style="font-size:24px; margin-left:10px; color:rgb(22, 176, 228)" class="fa">&#xf099;</i></a>
-            <a href="https://www.instagram.com/"target="blank">
-            <i style="font-size:24px; margin-left:10px; color:purple" class="fa">&#xf16d;</i></a>
-       
-        
-    
+        <p class="expertise">AREA OF EXPERTISE</p>
+        <p class="details">Experienced in Frontend and Backend Development</p>
+        <div class="back-image"><img src="back1.png"></div>
+        <div class="social-media-icons">
+            <a href="https://twitter.com/login"><img class="social-icon" src="https://cdn4.iconfinder.com/data/icons/bettericons/354/twitter-circle-512.png"></a>
+            <a href="https://www.instagram.com/"><img class="social-icon" src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491579602-yumminkysocialmedia36_83067.png"></a>
+            <a href="https://www.facebook.com/"><img class="social-icon" src="https://www.freeiconspng.com/uploads/logo-facebook-circle-png-pictures-9.png"></a>
+        </div>
     </div>
     
 
@@ -105,74 +90,75 @@
     </div>
   </div>
   <div class ="column">
-    <div class="container1"style="margin-left:60px">
+    <div class="container1">
     <div class="card">
-    <div class="front">
-        <img src="femaleavatar.png" style="border-radius: 50%">
-        <h3 style="text-align: center;">Lakshmi Chandhana B</h3>
-        <h4 style="text-align: center;">Developer</h4>
-        <i  style="margin-top:12px;"class="fa">&#xf10b; 0091 90001234</i>
-        
-        <i style="margin-left: 78px;" class="fa">&#xf0e0; lakshmi@gmail.com</i>
+    <div class="front1">
+        <img class="avatar" src="femaleavatar.png" >
+        <p class="expertise">Lakshmi Chandhana B</p>
+        <p class="details">Full Stack Developer</p>
+        <p class="details">Desgination</p>
+        <p class="c-details">aaaa@gmail.com</p>
+        <p class="c-details">+91 11111 11111</p>
     </div>
     <div class="back">
-        <img src="cardback2.png">
-        <a href="https://www.facebook.com/login" target="blank">
-            <i style="font-size:28px; color:blue; margin-top:30px;" class="fa">&#xf09a;</i></a>
-            <a href="https://twitter.com/login" target="blank">
-            <i style="font-size:28px; margin-left:10px; color:rgb(22, 176, 228)" class="fa">&#xf099;</i></a>
-            <a href="https://www.instagram.com/" target="blank">
-            <i style="font-size:28px; margin-left:10px; color:purple" class="fa">&#xf16d;</i></a>
+        <p class="expertise">AREA OF EXPERTISE</p>
+        <p class="details">Experienced in Frontend and Backend Development</p>
+        <div class="back-image2"><img src="back2.png"></div>
+        <div class="social-media-icons">
+            <a href="https://twitter.com/login"><img class="social-icon" src="https://cdn4.iconfinder.com/data/icons/bettericons/354/twitter-circle-512.png"></a>
+            <a href="https://www.instagram.com/"><img class="social-icon" src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491579602-yumminkysocialmedia36_83067.png"></a>
+            <a href="https://www.facebook.com/"><img class="social-icon" src="https://www.freeiconspng.com/uploads/logo-facebook-circle-png-pictures-9.png"></a>
+        </div>
     </div>
 
     </div>
     </div>
   </div>
   <div class ="column">
-    <div class="container1"style="margin-left:35px">
+    <div class="container1">
     <div class="card">
-    <div class="front">
-        <img src="femaleavatar2.png" style="border-radius: 50%">
-        <h3 style="text-align: center;">Ragapriya S</h3>
-        <h4 style="text-align: center;">Developer</h4>
-        
-        <i style="margin-top:12px;"class="fa">&#xf10b; 0091 90001234</i>
-        
-        <i style="margin-left: 78px;" class="fa">&#xf0e0; ragapriya@gmail.com</i>
+    <div class="front1">
+        <img class="avatar" src="femaleavatar2.png">
+        <p class="expertise">Ragapriya S</p>
+        <p class="details">Full Stack Developer</p>
+        <p class="details">Desgination</p>
+        <p class="c-details">aaaa@gmail.com</p>
+        <p class="c-details">+91 11111 11111</p>
     </div>
     <div class="back">
-        <img src="cardfinal3.png">
-        <a href="https://www.facebook.com/login" target="blank">
-            <i style="font-size:28px; color:blue; margin-top:30px; " class="fa">&#xf09a;</i></a>
-            <a href="https://twitter.com/login" target="blank">
-            <i style="font-size:28px; margin-left:10px; color:rgb(22, 176, 228)" class="fa">&#xf099;</i></a>
-            <a href="https://www.instagram.com/"target="blank">
-            <i style="font-size:28px; margin-left:10px; color:purple" class="fa">&#xf16d;</i></a>
+        <p class="expertise">AREA OF EXPERTISE</p>
+        <p class="details">Experienced in Frontend and Backend Development</p>
+        <div class="back-image3"><img src="back3.png"></div>
+        <div class="social-media-icons">
+            <a href="https://twitter.com/login"><img class="social-icon" src="https://cdn4.iconfinder.com/data/icons/bettericons/354/twitter-circle-512.png"></a>
+            <a href="https://www.instagram.com/"><img class="social-icon" src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491579602-yumminkysocialmedia36_83067.png"></a>
+            <a href="https://www.facebook.com/"><img class="social-icon" src="https://www.freeiconspng.com/uploads/logo-facebook-circle-png-pictures-9.png"></a>
+        </div>
     </div>
 
     </div>
     </div>
   </div>
   <div class ="column">
-    <div class="container1"style="margin-left:15px">
+    <div class="container1">
     <div class="card">
-    <div class="front">
-        <img src="female3.png" style="border-radius: 50%">
-        <h3 style="text-align: center;">Roshinii S</h3>
-       
-        <h4 style="text-align: center;">Developer</h4>
-        <i  style="margin-top:12px;"class="fa">&#xf10b; 0091 90001234</i>
-        
-        <i style="margin-left: 78px;" class="fa">&#xf0e0; roshinii@gmail.com</i>
+    <div class="front1">
+        <img class="avatar" src="female3.png" >
+        <p class="expertise">Roshinii S</p>
+        <p class="details">Full Stack Developer</p>
+        <p class="details">Desgination</p>
+        <p class="c-details">aaaa@gmail.com</p>
+        <p class="c-details">+91 11111 11111</p> 
     </div>
     <div class="back">
-        <img src="cardfinal4.png">
-        <a href="https://www.facebook.com/login" target="blank">
-            <i style="font-size:28px; color:blue; margin-top:30px;" class="fa">&#xf09a;</i></a>
-            <a href="https://twitter.com/login" target="blank">
-            <i style="font-size:28px; margin-left:10px; color:rgb(22, 176, 228)" class="fa">&#xf099;</i></a>
-            <a href="https://www.instagram.com/" target="blank">
-            <i style="font-size:28px; margin-left:10px; color:purple" class="fa">&#xf16d;</i></a>
+        <p class="expertise">AREA OF EXPERTISE</p>
+        <p class="details">Experienced in Frontend and Backend Development</p>
+        <div class="back-image4"><img src="back4.png"></div>
+        <div class="social-media-icons">
+            <a href="https://twitter.com/login"><img class="social-icon" src="https://cdn4.iconfinder.com/data/icons/bettericons/354/twitter-circle-512.png"></a>
+            <a href="https://www.instagram.com/"><img class="social-icon" src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491579602-yumminkysocialmedia36_83067.png"></a>
+            <a href="https://www.facebook.com/"><img class="social-icon" src="https://www.freeiconspng.com/uploads/logo-facebook-circle-png-pictures-9.png"></a>
+        </div>
     </div>
 
     </div>
