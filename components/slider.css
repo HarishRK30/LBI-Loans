@@ -9,7 +9,6 @@
 #slider {
     margin: 0 auto;
     width: 1150px;
-    margin-right: 90px;
     max-width: 100%;
  }
  #slider input[type=radio] {
