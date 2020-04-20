@@ -72,11 +72,11 @@ transform:rotateY(180deg);
 }
 .back
 {
-     
+    height:400px;
     width:300px;
     margin-top: 50px;
    
-    bottom:403px;
+   
     
     position:relative;
      transform:rotateY(180deg);
