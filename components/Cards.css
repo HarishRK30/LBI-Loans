@@ -16,8 +16,13 @@ box-shadow: 2px 2px 20px black;
 border-radius: 5px; 
 margin: 2%;
 }
-.image img{
+.card-holder{
+    padding: 5%;
+}
+.card-image img{
 width: 100%;
+margin-top: 0;
+height: 170px;
 border-top-right-radius: 5px;
 border-top-left-radius: 5px;
 }
