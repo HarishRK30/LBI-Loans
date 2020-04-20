@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="EMICalc.css">
+    <link rel="stylesheet" href="components/Top_Nav.css">
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="components/Side_MenuBar.css">
+    <script src="components/Side_MenuBar.js"></script>
+    <script src="components/EMICalc.js"></script>
+    <title>EMI Calculator</title>
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <header>
+    <nav>
+      <div id="mainbox" onclick="openFunc()"><img src="https://img.icons8.com/material-rounded/30/000000/menu.png"/></div>
+        <div class="logo">
+          <li><a href="index.html"><img class="logo-img" src="LBI Logo.png"></a></li>
+        </div>
+        <ul class="nav-links">
+            <li><a href="About.html">About</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="login.html"><button>Login</button></a></li>
+            <li><a href="register.html"><button>Register</button></a></li>
+        </ul>
+    </nav>
+    </header>
+    <!-- Side Menu Bar -->
+    <div id="s-menu" class="s-menu">
+        <ul class="s-menu-ul">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="#">Loan Services<span class="sub-arrow"></span></a>
+                <ul>
+                    <li><a href="homeloanregister.html">Home Loan</a></li>
+                    <li><a href="VehicleRegister.html">Vehicle Loan</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Schemes</a></li>
+            <li><a href="EMICalc.html">EMI Calculator</a></li>
+            <li><a href="#" class="closebtn" onclick="closeFunc()">&times;</a></li>
+        </ul>
+    </div>
+    <div class="emi">
+        <form id="loan-form">
+    <div class="e-form">
+        <div>
+        <p class="title-emi">EMI CALCULATOR</p> 
+        Enter the Amount:<input id="amount" type="number" class="emi-input-field" placeholder="Amount" required>
+        Interest Rate(%):<input id="interest" type="number" class="emi-input-field" placeholder="Interest" required>
+        Number of Years:<input id="years" type="number" class="emi-input-field" placeholder="Years" required>
+        </div>
+    <button class="calculate" onclick="computeResults(); return false" >Calculate</button>
+    </div>
+</form>
+  <div class="calculated-form">
+    <div class="opresults">
+      <div class="amount">
+        <p id="monthlyPayment" class="dis">₹  </p>
+        <p class="op-tit">Monthly Payments</p>
+      </div>
+    </div>
+      <div class="opresults">
+          <div class="interest">
+            <p id="totalInterest" class="dis">₹  </p>
+            <p class="op-tit">Interest Amount</p>
+          </div>
+        </div>
+        <div class="opresults">
+          <div class="total-pay">
+            <p id="totalPayment" class="dis">₹  </p>
+            <p class="op-tit">Total Amount Payable</p>
+          </div>
+        </div>
+  </div>
+</div>
+
+</body>
+</html>

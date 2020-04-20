@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="components/Top_Nav.css">
+<link rel="stylesheet" href="components/Side_MenuBar.css">
+<link rel="stylesheet" href="contactus.css">
+<script src="components/Side_MenuBar.js"></script>
+    <title>Application Form for VehicleLoan</title>
+    <link rel='stylesheet' href='applicationform.css'>
+    <script src="form.js"></script>
+</head>
+    <!-- Top Navigation Bar -->
+    <header>
+        <nav>
+          <div id="mainbox" onclick="openFunc()"><img src="https://img.icons8.com/material-rounded/30/000000/menu.png"/></div>
+            <div class="logo">
+                <li><a href="index.html"><img class="logo-img" src="LBI Logo.png"></a></li>
+            </div>
+            <ul class="nav-links">
+                <li><a href="About.html">About</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <!-- <li><a href="login.html"><button>Login</button></a></li> -->
+                <li><a href="VehicleLogin.html"><button>Sign Out</button></a></li>
+            </ul>
+        </nav>
+        </header>
+        <!-- Side Menu Bar -->
+        <div id="s-menu" class="s-menu">
+            <ul class="s-menu-ul">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#">Loan Services<span class="sub-arrow"></span></a>
+                    <ul>
+                        <li><a href="homeloanregister.html">Home Loan</a></li>
+                        <li><a href="VehicleRegister.html">Vehicle Loan</a></li>
+                    </ul>
+                </li>
+                <li><a href="scheme.html">Schemes</a></li>
+                <li><a href="EMICalc.html">EMI Calculator</a></li>
+                <li><a href="#" class="closebtn" onclick="closeFunc()">&times;</a></li>
+            </ul>
+        </div>
+    <!-- Application Form -->
+    <div class="application-form">
+<div class="toptitle">APPLICATION FORM FOR VEHICLE LOAN</div>
+<form name="form"id="form" class="input-group">
+    <div class="personal">Personal Details</div>
+    <input type="text" class="input-field" placeholder="Name of the Borrower" required>
+    <div class="label">
+        <label class="label"  for="gender">Gender</label><br>
+    </div>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label> &nbsp;&nbsp;
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>&nbsp;&nbsp;
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Rather not say</label><br>
+    <div class="label">
+        <label for="birthday">Date of Birth </label>&nbsp;&nbsp;
+    </div>
+    <input type="date" id="birthday" name="birthday"><br>
+    <input type="email" class="input-field" name='text1' placeholder="Email" required id="txtEmail" onblur="EmailValidate();">
+    <input type="text" class="input-field" placeholder="Aadhar Number" required id="txtAadhar" onblur="AadharValidate();">
+    <input type="text" class="input-field" placeholder="Constitution of Borrower" required>
+    <input type="text" class="input-field" placeholder="Nationality" required>
+    <input type="text" class="input-field" placeholder="Category" required>
+    <input type="text" class="input-field" placeholder="Permanent Address" required>
+    <input type="text" class="input-field" placeholder="Pincode" required id="txtPin" onblur="PinValidate();">
+    <input type="text" class="input-field" name='text2' placeholder="Telephone Number" required id="txtPhone" onblur="PhoneValidate();">
+    <input type="text" class="input-field" placeholder="PAN Number" required id="txtPan" onblur="PanValidate();" >
+    <input type="text" class="input-field" placeholder="Voter ID Number" required id="txtVoter" onblur="VoterValidate();">
+    <button type="submit" class="submit-btn" onclick="ValidateEmail(document.form.text1);phonenumber(document.form.text2)">Submit</button>
+</form>
+<form name="form1"id="form1" class="input-group">
+    <div class="applicant-title">Applicant Employment Details</div>
+    <!--
+    <input type="text" class="input-field" placeholder="Occupation" required>
+     -->
+    <label for="occupation">Occupation</label><br>
+    <div class="select">
+        <select id="work">
+            <option value="Agarbatti making">Agarbatti making</option>
+            <option value="Agriculture">Agriculture</option>
+            <option value="Animal Husbandry">Animal Husbandry</option>
+            <option value="Automobile work">Automobile work</option>
+            <option value="Bakery work">Bakery work</option>
+            <option value="Beautician">Beautician/Stylist</option>
+            <option value="Blacksmith">Blacksmith</option>
+            <option value="Breweries">Breweries/Distilleries</option>
+            <option value="Butchery">Butchery</option>
+            <option value="Carpentary">Carpentary</option>
+            <option value="Carpet weaving">Carpet weaving</option>
+            <option value="Catering">Catering</option>
+            <option value="Construction work">Construction work</option>
+            <option value="Courier service">Courier service</option>
+            <option value="Designer">Designer</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Domestic">Domestic work</option>
+            <option value="Dyeing">Dyeing</option>
+            <option value="Electronics">Electronic electrical goods repairs</option>
+            <option value="Electroplating">Electroplating</option>
+            <option value="Embroidery">Embroidery</option>
+            <option value="Engineer">Engineer</option>
+            <option value="Firecracker">Fire work cracker production</option>
+            <option value="Flowers">Flora work and garland making</option>
+            <option value="Footwear">Footwear production</option>
+            <option value="Foundry">Foundry</option>
+            <option value="Gem">Gem cutting</option>
+            <option value="Glassware">Glassware manufacturing</option>
+            <option value="Goldsmith">Goldsmith</option>
+            <option value="Handloom">Handloom</option>
+            <option value="Health">Health service</option>
+            <option value="Horticulture">Horticulture and Floriculture</option>
+            <option value="Hotel">Hotel and Restaurant service</option>
+            <option value="Lock">Lock making</option>
+            <option value="Labour">Manual Labour</option>
+            <option value="Matches">Matches manufacture</option>
+            <option value="Mill">Mill operation</option>
+            <option value="Mines">Minor mineral and mines work</option>
+            <option value="Newspaper">Newspaper vending</option>
+            <option value="NGO">NGO service</option>
+            <option value="Oil">Oil extraction</option>
+            <option value="Packing">Packing and Packaging</option>
+            <option value="Bunk">Petrol bunk/pump and allied service</option>
+            <option value="Pottery">Pottery</option>
+            <option value="Quary">Quary work</option>
+            <option value="Retailer">Retailer</option>
+            <option value="Rickshaw">Rickshaw pulling</option>
+            <option value="Security">Security service</option>
+            <option value="SmallScale">Small scale industries</option>
+            <option value="Soap">Soap manufacture</option>
+            <option value="Sports">Sports good manufacture</option>
+            <option value="Vessels">Steel vessels and utensils manufacture</option>
+            <option value="Sweeping">Sweeping</option>
+            <option value="Tanning">Tanning</option>
+            <option value="Teaching">Teaching</option>
+            <option value="Timber Industry">Timber Industry</option>
+            <option value="Toy">Toy making</option>
+            <option value="Transport">Transport service</option>
+            <option value="Laundry">Laundry Work</option>
+            <option value="Welding">Welding</option>
+            <option value="Any">Any other similar Occupation</option>
+            </select><br><br>
+    </div>
+    <input type="text" class="input-field" placeholder="Designation" required>
+    <input type="text" class="input-field" placeholder="Name of the Organisation" required>
+    <input type="text" class="input-field" placeholder="Address of the Organisation" required>
+    <div class="label">
+        <label for="Vehicle">Type of Vehicle</label>
+    </div>
+    <div class="select">
+        <select id="vehicle">
+            <option value="two">Two Wheeler</option>
+            <option value="four">Four Wheeler</option>
+            </select>
+    </div>
+</form>
+<div><img  class="illustration-img1" src="vehicle.png"></div>
+</div>
+</html>

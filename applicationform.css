@@ -1,0 +1,138 @@
+@font-face{
+    src: url(font/NowayRound-Regular.otf);
+    font-family: noway;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: noway;
+}
+.toptitle{
+    width: 500px;
+    margin: 35px auto;
+    font-size: 25px;
+    font-weight: bold;
+}  
+.personal{
+    margin-top: 70px;
+    font-style: normal;
+    font-size: 20px; 
+    padding-bottom: 17px;
+}
+.applicant-title{
+    padding-bottom: 23px;
+    margin-top: 70px;
+    font-style: normal;
+    font-size: 20px;
+}
+.input-group{
+    top: 120px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-group label{
+    color: rgb(95, 95, 95);
+    font-size: 14px;
+    width: 100%;
+}
+.input-field{
+    width: 100%;
+    padding: 8px 0;
+    padding-top: 15px;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    margin-top: 5px;
+    position: absolute;
+    margin-left: 1000px;
+    width: 100px;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: white;
+    display: block;
+    border: 0 ;
+    outline: none;
+    border-radius: 30px;
+}
+select{
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    background-color:rgb(240, 240, 240);
+    border: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: rgb(88, 88, 88);
+    font-size: 14px;
+    padding: 0 0 0 5px;
+    letter-spacing: 0.8px;
+}
+.select{
+    margin-top: 5px;
+    position: relative;
+    display: block;
+    width: 280px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.select::after{
+    content: '\25bc';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 8px 13px;
+    color: white;
+    background-color: rgb(190, 190, 190);
+    pointer-events: none;
+    transition: 0.2s all ease;
+}
+.select:hover::after{
+    color: rgb(42, 42, 42)
+}
+.label{
+    padding-top: 10px;
+}
+.illustration-img{
+    margin-top: 10%;
+    margin-left: 400px;
+    width: 600px;
+    height: 500px;
+}
+.illustration-img1{
+    margin-top: 15%;
+    margin-left: 300px;
+    width: 800px;
+    height: 450px;
+}
+
+#birthday{
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    width: 280px;
+    height: 35px;
+    background-color:rgb(240, 240, 240);
+    color: rgb(88, 88, 88);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: 5px;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+}
+#form{
+    left: 150px;
+}
+#form1{
+    left: 950px;
+}

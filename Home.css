@@ -1,0 +1,19 @@
+@font-face{
+    src: url(font/NowayRound-Regular.otf);
+    font-family: noway;
+}
+*{
+    font-family: noway;
+}
+.home{
+    height: 100%;
+    width: 100%;
+    background-image: url(Homepage.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.homepage-img{
+    width: 100%;
+    height: 100%;
+}

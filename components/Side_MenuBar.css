@@ -1,0 +1,69 @@
+@font-face{
+    src: url(font/NowayRound-Regular.otf);
+    font-family: noway;
+}
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: noway;
+}
+.s-menu{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0px;
+    background-color: rgb(14, 14, 14);
+    z-index: 3;
+    padding-top: 100px;
+    letter-spacing: 1px;
+    overflow-x: hidden;
+    transition: all .2s;
+}
+.s-menu-ul{
+    list-style: none;
+}
+.s-menu-ul ul li{
+    display: none;
+}
+.s-menu-ul li:hover li{
+    display: block;
+}
+.s-menu-ul ul a:before {
+	content: '\203A';
+	margin-right: 20px;
+}
+
+.s-menu .sub-arrow:after {
+	content: '\203A';
+	float: right;  
+	margin-right: 25px;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+}
+.s-menu li:hover .sub-arrow:after {
+	content: '\2039';
+}
+.s-menu a{
+    padding: 8px 8px 8px 50px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(148, 147, 147);
+    display: block;
+    transition: all .2s;
+}
+.s-menu a:hover{
+    color: white;
+}
+.s-menu .closebtn{
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 28px;
+    margin-left: 32px;
+}
+#mainbox{
+    margin: 20px 40px;
+    cursor: pointer;
+}

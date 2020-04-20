@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Front.css">
+    <link rel="stylesheet" href="components/Top_Nav.css">
+    <link rel="stylesheet" href="components/Side_MenuBar.css">
+    <link rel="stylesheet" href="components/slider.css">
+    <link rel="stylesheet" href="components/Cards.css">
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="EMICalc.css">
+    <script src="components/Side_MenuBar.js"></script>
+    <script src="components/EMICalc.js"></script>
+    <title>Welcome To LBI Loans</title>
+</head>
+
+<body>
+   <div class="front">
+    <!-- Top Navigation Bar -->
+    <header>
+    <nav>
+      <div id="mainbox" onclick="openFunc()"><img src="https://img.icons8.com/material-rounded/30/000000/menu.png"/></div>
+        <div class="logo">
+            <li><a href="index.html"><img class="logo-img" src="LBI Logo.png"></a></li>
+        </div>
+        <ul class="nav-links">
+            <li><a href="About.html">About</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="login.html"><button>Login</button></a></li>
+            <li><a href="register.html"><button>Register</button></a></li>
+        </ul>
+    </nav>
+    </header>
+    <!-- Side Menu Bar -->
+    <div id="s-menu" class="s-menu">
+        <ul class="s-menu-ul">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="#">Loan Services<span class="sub-arrow"></span></a>
+                <ul>
+                    <li><a href="homeloanregister.html">Home Loan</a></li>
+                    <li><a href="VehicleRegister.html">Vehicle Loan</a></li>
+                </ul>
+            </li>
+            <li><a href="scheme.html">Schemes</a></li>
+            <li><a href="EMICalc.html">EMI Calculator</a></li>
+            <li><a href="#" class="closebtn" onclick="closeFunc()">&times;</a></li>
+        </ul>
+    </div>
+    <!-- Slider Carousel -->
+    <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <div id="slides">
+           <div id="overflow">
+              <div class="inner">
+                 <div class="slide slide_1">
+                    <div class="slide-content">
+                       <h2>Online Loans</h2>
+                       <p>Loans can be applied through our online web portal.</p>
+                    </div>
+                 </div>
+                 <div class="slide slide_2">
+                    <div class="slide-content">
+                       <h2>Slide 2</h2>
+                       <p>Content for Slide 2</p>
+                    </div>
+                 </div>
+                 <div class="slide slide_3">
+                    <div class="slide-content">
+                       <h2>Slide 3</h2>
+                       <p>Content for Slide 3</p>
+                    </div>
+                 </div>
+                 <div class="slide slide_4">
+                    <div class="slide-content">
+                       <h2>Slide 4</h2>
+                       <p>Content for Slide 4</p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div id="controls">
+           <label for="slide1"></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+           <label for="slide1"></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+        </div>
+     </div>
+     <!-- EMI Calculator -->
+     <div class="emi">
+        <form id="loan-form">
+    <div class="e-form">
+        <div>
+        <p class="title-emi">EMI CALCULATOR</p> 
+        Enter the Amount:<input id="amount" type="number" class="emi-input-field" placeholder="Amount" required>
+        Interest Rate(%):<input id="interest" type="number" class="emi-input-field" placeholder="Interest" required>
+        Number of Years:<input id="years" type="number" class="emi-input-field" placeholder="Years" required>
+        </div>
+    <button class="calculate" onclick="computeResults(); return false" >Calculate</button>
+    </div>
+</form>
+  <div class="calculated-form">
+    <div class="opresults">
+      <div class="amount">
+        <p id="monthlyPayment" class="dis">₹  </p>
+        <p class="op-tit">Monthly Payments</p>
+      </div>
+    </div>
+      <div class="opresults">
+          <div class="interest">
+            <p id="totalInterest" class="dis">₹  </p>
+            <p class="op-tit">Interest Amount</p>
+          </div>
+        </div>
+        <div class="opresults">
+          <div class="total-pay">
+            <p id="totalPayment" class="dis">₹  </p>
+            <p class="op-tit">Total Amount Payable</p>
+          </div>
+        </div>
+  </div>
+</div>
+     <!-- Offer Cards -->
+     <!--Card 01 -->
+    <div class="card">
+      <div class="image">
+         <img src="https://demotix.com/wp-content/uploads/2019/08/Fast-Online-Loans.jpg">
+      </div>
+      <div class="title">
+          <h1 class="Offer-card-title">Get Loans Online</h1>
+      </div>
+      <div class="des">
+          <p>Now get loans through online from home</p>
+          <a href="#"><button class="Card-btn">Read More</button></a>
+      </div>
+      </div>
+      <!-- Card 02 -->
+      <div class="card">
+          <div class="image">
+             <img src="https://ciotechie.com/wp-content/uploads/2019/05/BlueVine-partners-GovQuote-for-SME-Funding.jpg">
+          </div>
+          <div class="title">
+              <h1 class="Offer-card-title">Fast Approvals</h1>
+          </div>
+          <div class="des">
+              <p>Get Loans Approved within 24 hours of Application Submitted</p>
+              <a href="#"><button class="Card-btn">Read More</button></a>
+          </div>
+          </div>
+      <!-- Card 03 -->
+      <div class="card">
+          <div class="image">
+             <img src="https://images.financialexpress.com/2020/02/HOME-LOAN-HIKE1200X800-1.jpg?w=1200&h=800&imflag=true">
+          </div>
+          <div class="title">
+              <h1 class="Offer-card-title">Home Loans</h1>
+          </div>
+          <div class="des">
+              <p>Get Home Loans with the low rate of interest from 10% - 12%</p>
+              <a href="homeloanregister.html"><button class="Card-btn">Apply Now</button></a>
+          </div>
+          </div>
+      <!-- Card 04 -->
+      <div class="card">
+          <div class="image">
+             <img src="https://images.financialexpress.com/2019/06/car-loan1.jpg?w=1200&h=800&imflag=true">
+          </div>
+          <div class="title">
+              <h1 class="Offer-card-title">Vehicle Loans</h1>
+          </div>
+          <div class="des">
+              <p>Get Vehicle Loans with the low rate of interest from 7% - 10%</p>
+              <a href="VehicleRegister.html"><button class="Card-btn">Apply Now</button></a>
+          </div>
+          </div>
+
+          <!-- hero div ends-->
+   </div>    
+</body>
+</html>

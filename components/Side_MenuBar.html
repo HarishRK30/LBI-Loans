@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Side_MenuBar.css">
+    <script src="Side_MenuBar.js"></script>
+    <title>Side Menu</title>
+</head>
+<body>
+    <div id="mainbox" onclick="openFunc()"><img src="https://img.icons8.com/material-rounded/30/000000/menu.png"/></div>
+    <div id="s-menu" class="s-menu">
+        <ul class="s-menu-ul">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Loan Services<span class="sub-arrow"></span></a>
+                <ul>
+                    <li><a href="#">Home Loan</a></li>
+                    <li><a href="#">Vehicle Loan</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Schemes</a></li>
+            <li><a href="#">EMI Calculator</a></li>
+            <li><a href="#" class="closebtn" onclick="closeFunc()">&times;</a></li>
+        </ul>
+    </div>
+</body>
+</html>

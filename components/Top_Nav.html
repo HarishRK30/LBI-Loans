@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Top_Nav.css">
+    <link rel="stylesheet" href="Side_MenuBar.css">
+    <script src="Side_MenuBar.js"></script>
+    <title>Navigation Bar</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo">
+            <li><a href="Front.html">LBI Loans</a></li>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="#"><button>Login</button></a></li>
+            <li><a href="#"><button>Register</button></a></li>
+        </ul>
+        
+    </nav>
+    
+    </header>
+    <div id="mainbox" onclick="openFunc()"><img src="https://img.icons8.com/material-rounded/30/000000/menu.png"/></div>
+    <div id="s-menu" class="s-menu">
+        <ul class="s-menu-ul">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Loan Services<span class="sub-arrow"></span></a>
+                <ul>
+                    <li><a href="#">Home Loan</a></li>
+                    <li><a href="#">Vehicle Loan</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Schemes</a></li>
+            <li><a href="#">EMI Calculator</a></li>
+            <li><a href="#" class="closebtn" onclick="closeFunc()">&times;</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

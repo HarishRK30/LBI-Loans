@@ -1,0 +1,12 @@
+@font-face{
+    src: url(font/NowayRound-Regular.otf);
+    font-family: noway;
+}
+.front{
+    height: 100%;
+    width: 100%;
+    background: white;
+    background-position: center;
+    background-size: cover;
+    font-family: noway;
+}

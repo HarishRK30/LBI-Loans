@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="components/Top_Nav.css">
+    <link rel="stylesheet" href="components/Side_MenuBar.css">
+     <link rel="stylesheet" href="contactus.css">
+    <script src="components/Side_MenuBar.js"></script>
+    <script src="components/EMICalc.js"></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header>
+    <nav>
+      <div id="mainbox" onclick="openFunc()"><img src="https://img.icons8.com/material-rounded/30/000000/menu.png"/></div>
+        <div class="logo">
+            <li><a href="index.html"><img class="logo-img" src="LBI Logo.png"></a></li>
+        </div>
+        <ul class="nav-links">
+            <li><a href="About.html">About</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="login.html"><button>Login</button></a></li>
+            <li><a href="register.html"><button>Register</button></a></li>
+        </ul>
+    </nav>
+    </header>
+    <!-- Side Menu Bar -->
+    <div id="s-menu" class="s-menu">
+        <ul class="s-menu-ul">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="#">Loan Services<span class="sub-arrow"></span></a>
+                <ul>
+                    <li><a href="homeloanregister.html">Home Loan</a></li>
+                    <li><a href="VehicleRegister.html">Vehicle Loan</a></li>
+                </ul>
+            </li>
+            <li><a href="scheme.html">Schemes</a></li>
+            <li><a href="EMICalc.html">EMI Calculator</a></li>
+            <li><a href="#" class="closebtn" onclick="closeFunc()">&times;</a></li>
+        </ul>
+    </div>
+
+ <!-- Contact Us -->
+ <div class="contact-us">
+    <div class="contactus-title">HAVE SOME QUESTIONS?</div><br>
+<form name="contact-form" id="contact-form" class="input-text">
+	<input type="text" class="input-box" placeholder="Username" required><br><br>
+	<input type="text" class="input-box" placeholder="Mobile Number" required><br><br>
+	<input type="text" class="input-box" placeholder="Email" required><br><br>
+    <textarea id="comment" name="comment" placeholder="What's on your mind?" style="height:200px"></textarea>
+	<button type="submit" class="submit-button" >Submit</button>
+</form>
+    <img class="bgimage" src="contactus.png"> 
+</div>
+
+</body>
+</html>

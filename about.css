@@ -1,0 +1,124 @@
+@font-face{
+    src: url(font/NowayRound-Regular.otf);
+    font-family: noway;
+}
+.about p
+{   
+    margin-top: 20px;
+    line-height: 1.6;
+    color:black;
+    text-align: left;
+    font-size: 20px;
+}
+.about-imag{
+  width: 50%;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -10px;}
+  
+  /* Clear floats after the columns */
+  .row{
+      display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      
+    }
+  }
+  
+  
+.container1
+{
+    height:375px;
+    width:275px;
+    padding: 5%;
+    margin-left: 30%;
+    margin-bottom: 15%;
+    border-radius: 5px;
+    left:0;
+    top:0px;
+    bottom:0;
+    right:0;
+    -webkit-perspective:800;
+}
+.card
+{
+    background-color:white;
+    height:100%;
+    width:100%;
+    transform-style:preserve-3d;
+    position:relative;
+    transition:all 2s ease;
+    -webkit-transform-style: preserve-3d;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px black;
+    cursor: pointer;
+}
+
+.card:hover
+{
+  background-color: #f8f8f8;
+transform:rotateY(180deg);
+}
+.back
+{
+    
+    bottom:200px;
+    position:relative;
+     transform:rotateY(180deg);
+
+}
+.expertise{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.details{
+  font-size: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  line-height: 1.6;
+}
+.c-details{
+  font-size: 15px;
+  text-align: center;
+  color: #6C63FF;
+}
+.front1,.back{
+backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
+}
+.about
+{
+color: #6C63FF;
+margin-left:100px;
+margin-top: 50px;
+}
+.avatar{
+  margin-left: 46px;
+  width:66%;
+  margin-top: 40px;
+  border-radius: 50%;
+}
+.social-media-icons{
+  margin-top: 30%;
+  margin-left: 70px;
+}
+.social-icon{
+  display: inline-block;
+  width: 20%;
+}

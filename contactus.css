@@ -1,0 +1,70 @@
+@font-face{
+    src: url(font/NowayRound-Regular.otf);
+    font-family: noway;
+}
+.bgimage {
+    position: absolute;
+    top: 120px;
+    left: 70px;
+    width: 600px;
+    height: 500px;
+}
+
+.contactus-title{
+    margin-top: 55px;
+    margin-left: 53.5%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #6C63FF; 
+} 
+
+.input-text{
+    right: 200px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+  
+}
+.input-box{
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    margin-left: 650px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border: 1px solid #6C63FF;
+    border-radius: 5px; 
+    outline: none;
+}
+
+.input-text textarea {
+  width: 200%;
+  padding: 10px 0 10px 10px;
+  margin-left: 650px;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border: 1px solid #6C63FF;
+  border-radius: 5px; 
+  resize: none; 
+  outline: none;
+}
+
+.submit-button{
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 650px;
+    width: 100px;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: white;
+    display: block;
+    background-color: #6C63FF;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+}
+
+#contact-form{
+    right: 1000px;
+}
