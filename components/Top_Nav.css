@@ -8,12 +8,18 @@
     box-sizing: border-box;
     font-family: noway;
 }
+header{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
 nav{
     display:flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
     background-color:rgb(231, 228, 228);
+    
 }
 .logo{
     margin-right: 400px;
